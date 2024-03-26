@@ -39,9 +39,8 @@ fetch(proxyUrl + targetUrl)
          <h2>${deal.title}</h2>
           <img src="${deal.thumb}">
           <p>Normal Price: $${deal.normalPrice}</p>${deal.saveInteger = parseInt(deal.savings)}%</p>
-          <p>Sale Price: $${deal.salePrice}</p>
-          <p>DealID: ${deal.dealID}</p> 
-          <a href="https://www.cheapshark.com/redirect?dealID=${deal.dealID}" target="_blank">View Deal</a>
+          <p>Sale Price: $${deal.salePrice}
+          </p><a href="https://www.cheapshark.com/redirect?dealID=${deal.dealID}" target="_blank">View Deal</a>
         `;
           dealsContainer.appendChild(dealElement);
         });
