@@ -101,6 +101,109 @@
     text-decoration: none;
   }
 
+  .deal a:hover {
+    background-color: #444;
+  }
+
+  #deals-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  #error-message {
+    text-align: center;
+    color: red;
+  }
+
+  @media (max-width: 600px) {
+    #deals {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .deal img {
+      height: 150px;
+    }
+
+    .deal h2 {
+      font-size: 1rem;
+    }
+
+    .deal p {
+      font-size: 0.75rem;
+    }
+
+    .deal a {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    #deals {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .deal img {
+      height: 100px;
+    }
+
+    .deal h2 {
+      font-size: 0.75rem;
+    }
+
+    .deal p {
+      font-size: 0.5rem;
+    }
+
+    .deal a {
+      font-size: 0.75rem;
+    }
+  }
+
+  @media (max-width: 300px) {
+    #deals {
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+    .deal img {
+      height: 75px;
+    }
+
+    .deal h2 {
+      font-size: 0.5rem;
+    }
+
+    .deal p {
+      font-size: 0.25rem;
+    }
+
+    .deal a {
+      font-size: 0.5rem;
+    }
+  }
+
+  @media (max-width: 200px) {
+    #deals {
+      grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    }
+
+    .deal img {
+      height: 50px;
+    }
+
+    .deal h2 {
+      font-size: 0.25rem;
+    }
+
+    .deal p {
+      font-size: 0.1rem;
+    }
+
+    .deal a {
+      font-size: 0.25rem;
+    }
+  }
+  
+
   
 </style>
 
@@ -125,6 +228,8 @@
       </select>
     </form>
     <div id="deals"></div>
+    <div id="deals-container"></div>
+    <div id="error-message"></div>
     <script src="index.js"></script>
   </body>
 </html>
